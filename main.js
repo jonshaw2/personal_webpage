@@ -12,12 +12,18 @@ $(document).ready(function(){
 
   });
 
+  $(".background").click(function(){
+    remove_animation();
+    run_animation('.mid_content');
+  });
+
   $("#portfolio").click(function(){
     $('.title').text("Portfolio");
     remove_animation();
     run_animation('.portfolio');
 
   });
+
 
 
 
