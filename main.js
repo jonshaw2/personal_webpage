@@ -46,10 +46,12 @@ $(document).ready(function(){
   $(".taco_toggle").click(function(){
     if (backgroundAnimation === ("image/snow.png")){
       backgroundAnimation = "image/taco.png";
+      $(".taco_toggle img").attr('src','image/snow.png');
       backgroundOpacity = 1;
     }
     else{
       backgroundAnimation ="image/snow.png";
+      $(".taco_toggle img").attr('src','image/taco.png');
       backgroundOpacity = 0.2;
     }
 
