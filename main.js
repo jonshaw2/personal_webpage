@@ -2,6 +2,8 @@ $(document).ready(function(){
   var lastButtonPressed = '.mid_content';
   var slideIndex = 1;
   var lastButton = 'test';
+  var backgroundAnimation = "image/snow.png";
+  var backgroundOpacity = 0.2;
   changeButton('#home');
 
 
@@ -41,8 +43,25 @@ $(document).ready(function(){
     plusDivs(1);
   });
 
+  $(".taco_toggle").click(function(){
+    if (backgroundAnimation === ("image/snow.png")){
+      backgroundAnimation = "image/taco.png";
+      backgroundOpacity = 1;
+    }
+    else{
+      backgroundAnimation ="image/snow.png";
+      backgroundOpacity = 0.2;
+    }
+
+    for (var i=0; i<10; i++){
+      console.log('test');
+      $(".snow"+i).attr('src',backgroundAnimation);
+      $(".snow"+i).css("opacity",backgroundOpacity);
+    }
+  });
+
   function changeButton(button_class){
-    $(lastButton).css('background-color','Transparent');
+    $(lastButton).css('background','none');
     lastButton = button_class;
     $(button_class).css('background','#333333');
   }

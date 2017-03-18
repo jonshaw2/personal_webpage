@@ -13,9 +13,8 @@
     .top{
       position: absolute;
       margin: 0 0 0 0;
-      height: 350px;
+      height: 150px;
       width: 100%;
-
 
     }
     .top_content{
@@ -41,10 +40,12 @@
       width: 100%;
       color: white;
       text-align: center;
-      font-size: 25px;
+      font-size: 15px;
     }
 
     .github_link{
+      position: relative;
+      float:left;
       padding: 20px;
     }
 
@@ -52,19 +53,38 @@
       width: 50px
     }
 
-    .github_link a img:hover{
-      width: 80px;
+    .taco{
+      padding: 20px 20px 20px 0;
+      position: relative;
+      float:left;
+    }
+    .top_link_box{
+
+    }
+    .taco img{
+      width: 50px;
+      background: none;
     }
 
+    .taco button{
+      background-color: transparent;
+      background-repeat:no-repeat;
+      border: none;
+      cursor:pointer;
+      overflow: hidden;
+      outline:none;
+    }
     .middle{
       position: absolute;
-      margin: 170px 0 0 0;
+      margin: 220px 0 0 0;
       height: auto;
       width: 100%;
 
 
+
     }
     .mid_content{
+
       position: absolute;
       height: 450px;
       border-top: 3px solid white;
@@ -82,13 +102,13 @@
 
     .about{
       position: absolute;
-      height: 600px;
+      height: auto;
       border-top: 3px solid white;
       border-bottom: 3px solid white;
       margin: 0px 15% 0 15%;
       animation-fill-mode: forwards;
       width: 70%;
-      font-size: 30px;
+      font-size: 100%;
       color: white;
       text-align: left;
       opacity: 0;
@@ -136,9 +156,6 @@
       max-width: 80%;
       height: auto;
       width: auto;
-
-
-
     }
 
 
@@ -183,14 +200,14 @@
     }
     .background{
       z-index: -2;
-
       position: absolute;
       background-image: url("image/background.jpg");
       float: left;
       background-size: cover;
       background-repeat: no-repeat;
       width: 100%;
-      height: 950px;
+      height: auto;
+      min-height: 950px;
 
     }
     .snow{
@@ -200,15 +217,17 @@
     .body{
       margin: 0;
       text-align: center;
-      background-color: red;
+
     }
 
     .webpage_links{
-      display: inline-block;
+      width: auto;
+      position: absolute;
+
       text-align: center;
       width: 80%;
-      margin: 0 10% 0 10%;
-
+      margin: 100px 10% 0 10%;
+      background-color: red;
     }
     .webpage_links button{
       font-size: 20px;
@@ -217,10 +236,13 @@
       background: none;
       padding: 5px;
       border: none;
-
       text-decoration: none;
 
     }
+    .webpage_links button:hover{
+      background: #B6B4B8!important;
+    }
+
     .run-animation-fade{
       -webkit-animation: fade .25s linear;
       animation-fill-mode: forwards;
@@ -258,16 +280,19 @@
 
       <div class="top">
         <div class="top_content">
-          <div class="github_link"><a href="https://github.com/jonshaw2"><img src="image/rund_github.png" alt=""></a></div>
-        </div>
-        <div class="webpage_links">
-          <ul>
+          <div class="top_link">
+            <div class="github_link"><a href="https://github.com/jonshaw2"><img src="image/rund_github.png" alt=""></a></div>
+            <div class="taco"><button class="taco_toggle"><img src="image/taco.png" alt=""></button></div>
+          </div>
+          <div class="webpage_links">
+            <ul>
               <button id="home" type="button" name="button">HOME</button>
               <button id="about" type="button" name="button">ABOUT</button>
               <button id="portfolio" type="button" name="button">PORTFOLIO</button>
               <button id="contact" type="button" name="button">CONTACT</button>
               <button id="resume" type="button" name="button">RESUME</button>
-          </ul>
+            </ul>
+          </div>
         </div>
       </div>
       <div class="middle">
@@ -277,7 +302,11 @@
           </div>
 
           <div class="about">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            I'm a Full Stack Web Developer based around Atlanta, GA. I attended Georgia Institute of Technology for my undergraduate degree where I majored in Industrial Engineering. After graduation I held a variety of positions from IT support to designing an assembly line in China. I soon discovered my passion for coding. <br>
+            I quickly discovered similarities between the two process, but now instead of providing instructions for how many times for a worker to rotate a screw, I am now providing instructions for how many times for a computer to traverse a loop.<br>
+            I decided I was ready for a new challenge and moved on to web development.
+            Through analyzing online resources and lots of trial and error, I was able to create simple programs with simple functionality. To move on to the next step and to learn how to program professionally, I enrolled in DigitalCrafts' full-time full-stack immersive coding bootcamp in February of 2017.
+            To see what I've been working on check out my portfolio!
           </div>
 
           <div class="portfolio">
