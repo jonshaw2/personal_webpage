@@ -161,7 +161,7 @@ $(document).ready(function(){
     function snowing(sheight, swidth, snowCount, speed){
       var heightlimit = window.innerHeight-100;
       if (heightlimit > 1000){
-        heightlimit = 1000;
+        heightlimit = 950;
       }
 
       if (sheight <= heightlimit){
