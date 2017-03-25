@@ -86,6 +86,9 @@ $(document).ready(function(){
 
   function run_animation(showContent, contentId){
     if (lastButtonPressed != showContent){
+      $(lastButtonPressed).css('visibility','visibile');
+      $(showContent).css('visibility','visible');
+
 
       $(lastButtonPressed).css('opacity','1');
       setTimeout(function(){
@@ -99,6 +102,7 @@ $(document).ready(function(){
         $(showContent).addClass('run-animation-appear');
         $(lastButtonPressed).css('opacity','0');
         changeButton(contentId);
+        $(lastButtonPressed).css('visibility','hidden');
         lastButtonPressed = showContent;
       }, 251);
     }
@@ -159,10 +163,8 @@ $(document).ready(function(){
 
       }
     function snowing(sheight, swidth, snowCount, speed){
-      var heightlimit = window.innerHeight-100;
-      if (heightlimit > 1000){
-        heightlimit = 950;
-      }
+      var heightlimit = $(".background").innerHeight()-100;
+
 
       if (sheight <= heightlimit){
 
