@@ -141,6 +141,7 @@
 
     .skill{
       position: absolute;
+      display: inline;
       height: auto;
       margin: 0px 20% 0 20%;
       animation-fill-mode: forwards;
@@ -153,6 +154,25 @@
       padding: 15px;
       background: rgba(0, 0 , 0, .5);
     }
+
+    .skill_content{
+      text-align: left;
+      width: 100%;
+      height: auto;
+      padding-bottom: 50px;
+    }
+
+    @media screen and (min-width: 750px) {
+      .skill_content{
+        text-align: left;
+        float: left;
+        width: 33%;
+        height: auto;
+      }
+    }
+
+
+
 
     .portfolio{
       position: absolute;
@@ -214,6 +234,8 @@
     color: white;
     }
 
+
+
     .contact{
       position: relative;
       height: 600px;
@@ -242,20 +264,21 @@
     .contact_info{
       font-size: 15px;
       text-align: middle;
-      width: 30%;
+      width: 80%;
       padding: 150px 0 0 15px;
-      margin: 0 35% 0 35%;
+      margin: 0 10% 0 10%;
     }
 
     .contact_link{
-      position: absolute;
-      float:left;
-      padding: 20px;
-
+      display: inline-block;
+      width: auto;
+      padding-top: 20px;
+      margin: 0 1% 0 1%;
     }
 
     .contact_link a img{
-      width: 30px
+      width: 30px;
+      height: 30px;
     }
 
     .bottom{
@@ -384,13 +407,35 @@
           </div>
 
           <div class="skill">
-
-
+            <div class = "skill_content">
+              <h3>Frontend</h3>
+                Html5<br>
+                CSS<br>
+                Bootstrap<br>
+                Javascript/jquery<br>
+                AJAX/JSON<br>
+                Responsive Design<br>
+            </div>
+            <div class = "skill_content">
+              <h3>Backend</h3>
+                Node.js<br>
+                Express<br>
+                MySQL<br>
+                Python<br>
+            </div>
+            <div class = "skill_content">
+              <h3>Development Tools</h3>
+                Amazon Web Services (AWS)<br>
+                Git<br>
+                Postgres<br>
+            </div>
           </div>
 
           <div class="portfolio">
 
             <div class="item1">
+              <div class ="mySlides"><img src="https://i.ytimg.com/vi/SiA2NVoMC00/0.jpg" alt=""><div class="portfolio_text">HuddleUp<br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              </div></div>
               <div class="mySlides"><img src="image/mini_games.jpg" alt=""><div class="portfolio_text">Mini Games<br><br>
                 this mini-game is coded using python, it is the first pygame I have created where player is able to play four mini-game at the same time.  This is made available by dividing the canvas into four separate blocks, each block initiating a separate instance of a function running a different game.  By constantly listening for different player inputs, the game was created and was able to be enjoyed.
               </div></div>
@@ -413,6 +458,9 @@
             <div class="contact_info">Joanthan Shaw <br>
               <a href="mailto:jonathan.y.shaw@gmail.com">jonathan.y.shaw@gmail.com</a><br>
               <div class="contact_link"><a href="https://github.com/jonshaw2" target="_blank"><img src="image/rund_github.png" alt=""></a></div>
+              <div class="contact_link"><a href="mailto:jonathan.y.shaw@gmail.com" target="_blank"><img src="image/gmail.png" alt=""></a></div>
+              <div class="contact_link"><a href="http://www.linkedin.com/in/jonathan-shaw-b6718670" target="_blank"><img src="image/linkedin.png" alt=""></a></div>
+              <div class="contact_link"><a href="Jonathan_Shaw_resume.pdf" target="_blank"><img src="image/resume.jpg" alt=""></a></div>
             </div>
 
           </div>
