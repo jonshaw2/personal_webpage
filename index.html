@@ -164,7 +164,7 @@
 
     @media screen and (min-width: 750px) {
       .skill_content{
-        text-align: left;
+        text-align: middle;
         float: left;
         width: 33%;
         height: auto;
@@ -210,19 +210,26 @@
       margin-right: auto;
 
       max-height: 380px;
-      max-width: 80%;
+      max-width: 70%;
       height: auto;
       width: auto;
     }
 
+    .portfolio .portfolio_link{
+      position: relative;
+      height: auto;
+      margin: auto;
+      font-size: 15px;
+      padding: 20px 17% 20px 17%;
+    }
 
     .portfolio .portfolio_text{
       position: relative;
       height: auto;
       margin: auto;
       font-size: 15px;
-      padding: 20px 10% 20px 10%;
-      text-align: center;
+      padding: 20px 17% 20px 17%;
+      text-align: left;
 
 
 
@@ -312,6 +319,7 @@
 
     }
 
+
     .webpage_links{
 
       position: absolute;
@@ -398,11 +406,9 @@
               <img src="image/webpage_profile_image.jpg" alt="">
             </div>
             <div class = "about_text">
-            I'm a Full Stack Web Developer based around Atlanta, GA. I attended Georgia Institute of Technology for my undergraduate degree where I majored in Industrial Engineering. After graduation I held a variety of positions from IT support to designing an assembly line in China. I soon discovered my passion for coding. <br>
-            I quickly discovered similarities between the two process, but now instead of providing instructions for how many times for a worker to rotate a screw, I am now providing instructions for how many times for a computer to traverse a loop.<br>
-            I decided I was ready for a new challenge and moved on to web development.
-            Through analyzing online resources and lots of trial and error, I was able to create simple programs with simple functionality. To move on to the next step and to learn how to program professionally, I enrolled in DigitalCrafts' full-time full-stack immersive coding bootcamp in February of 2017.
-            To see what I've been working on check out my portfolio!
+              I'm a Full Stack Web Developer based around Atlanta, GA. I attended Georgia Institute of Technology for my undergraduate degree where I majored in Industrial Engineering. After graduation I held a variety of positions from IT support to assembly line design in China. I soon discovered my passion for coding.<br>
+              I quickly noticed similarities between the two process, but now instead of providing instructions for how many times for a worker to rotate a screw, I am now providing instructions for how many times for a computer to traverse a loop.<br>
+              I decided I was ready for a new challenge and moved on to web development. Through self-learning from online resources and lots of trial and error, I was able to create simple programs with simple functionality. To move on to the next step and to learn how to program professionally, I enrolled in DigitalCrafts' full-time full-stack immersive coding bootcamp in February of 2017. To see what I've been working on check out my portfolio!
             </div>
           </div>
 
@@ -434,17 +440,18 @@
           <div class="portfolio">
 
             <div class="item1">
-              <div class ="mySlides"><img src="https://i.ytimg.com/vi/SiA2NVoMC00/0.jpg" alt=""><div class="portfolio_text">HuddleUp<br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              <div class ="mySlides"><img src="image/huddleup.jpg" alt=""><div class="portfolio_link"><a href="http://letshuddleup.net/" target="_blank">HuddleUp</a></div><div class="portfolio_text">HuddleUp is an full-stack project coded in javascript and html, it is a database heavy project with constant communication between between front-end and back-end using express.<br>
+
+              HuddleUp itself is a little league team management helper, it allow users to create an account and then either create/join a team for their children.  In the team view users can view team roster, send messages to other members and view upcoming events.  Owner of the team have access to special functions such as creating an event or sending a text message to all the members of the team.
+
               </div></div>
-              <div class="mySlides"><img src="image/mini_games.jpg" alt=""><div class="portfolio_text">Mini Games<br><br>
+              <div class="mySlides"><img src="image/mini_games.jpg" alt=""><div class="portfolio_link">Mini Games</div><div class="portfolio_text">
                 this mini-game is coded using python, it is the first pygame I have created where player is able to play four mini-game at the same time.  This is made available by dividing the canvas into four separate blocks, each block initiating a separate instance of a function running a different game.  By constantly listening for different player inputs, the game was created and was able to be enjoyed.
               </div></div>
-              <div class="mySlides"><img src="image/blackjack.jpg" alt=""><div class="portfolio_text"><a href="http://blackjack.jonathanyshaw.com" target="_blank">BlackJack</a><br><br>
+              <div class="mySlides"><img src="image/blackjack.jpg" alt=""><div class="portfolio_link"><a href="http://blackjack.jonathanyshaw.com" target="_blank">BlackJack</a></div><div class="portfolio_text">
                  This is a blackjack game I created during a pair-programming exercise, it is coded using javascript, html, and jQuery.  It also contains my first experiment playing around with simple animation where the card spins during card releaving.
               </div></div>
-              <div class="mySlides"><img src="image/tic_tac_toe.jpg" alt=""><div class="portfolio_text">tic_tac_toe<br><br>
-                This is a simple tic-tac-toe game I created during class, it is coded using javascript, html, and jQuery.  It is implemented with a toggleable AI that can play against the player by playing randomly.
-              </div></div>
+
 
               <button class="w3-button w3-display-left">&#10094;</button>
               <button class="w3-button w3-display-right">&#10095;</button>
@@ -469,8 +476,8 @@
       <div class="bottom">
 
 
-
       </div>
     </div>
+
   </body>
 </html>
