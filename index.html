@@ -306,8 +306,23 @@
       width: 100%;
       height: auto;
       min-height: 950px;
-
     }
+
+    @media screen and (min-width: 750px) {
+      .background{
+        z-index: -2;
+        position: fixed;
+        background-image: url("image/background.jpg");
+        float: left;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+
+        min-height: 950px;
+      }
+    }
+
+
     .snow{
       z-index: -1;
     }
